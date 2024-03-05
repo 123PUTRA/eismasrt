@@ -1,0 +1,41 @@
+ body {
+            background: linear-gradient(to right, #cdf1cd, #387a38, #004d00);
+            background-size: 200% 100%; /* Untuk memperluas latar belakang */
+            color: white;
+            animation: backgroundAnimation 10s ease infinite; /* Menjalankan animasi dengan waktu 10 detik */
+            display: flex;
+            justify-content: center; /* Menengahkan konten horizontal */
+            align-items: center; /* Menengahkan konten vertical */
+        }
+
+        /* Animasi latar belakang */
+        @keyframes backgroundAnimation {
+            0% {
+                background-position: 0% 50%; /* Mulai dari posisi awal */
+            }
+            50% {
+                background-position: 100% 50%; /* Pindah ke posisi tengah */
+            }
+            100% {
+                background-position: 0% 50%; /* Kembali ke posisi awal */
+            }
+        }
+
+        .btn-dark {
+            width: 100%; 
+            margin-bottom: 10px; 
+            background: linear-gradient(to right, #005500, #011601);
+            transition: all 0.3s ease; /* Efek transisi saat hover */
+        }
+        .btn-dark:hover {
+            transform: scale(1.1); /* Memperbesar tombol saat hover */
+        }
+        .dropdown-menu {
+            width: 100%;
+            background-color: transparent !important; /* Menghapus background menu dropdown */
+            border: none !important; /* Menghapus border menu dropdown */
+        }
+        .dropdown-item {
+            background-color: transparent !important; /* Menghapus background item dropdown */
+            border: none !important; /* Menghapus border item dropdown */
+        }
